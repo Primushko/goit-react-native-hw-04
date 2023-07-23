@@ -4,6 +4,7 @@ import "react-native-gesture-handler";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { useFonts } from "expo-font";
+import Home from "./src/Screens/Home";
 import LoginScreen from "./src/Screens/LoginScreen";
 import RegistrationScreen from "./src/Screens/RegistrationScreen";
 
@@ -30,6 +31,7 @@ export default function App() {
           component={RegistrationScreen}
         />
         <Stack.Screen name="LoginScreen" component={LoginScreen} />
+        <Stack.Screen name="Home" component={Home} />
       </Stack.Navigator>
     </NavigationContainer>
   );
