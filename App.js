@@ -5,6 +5,8 @@ import { useFonts } from "expo-font";
 import Home from "./src/Screens/Home";
 import LoginScreen from "./src/Screens/LoginScreen";
 import RegistrationScreen from "./src/Screens/RegistrationScreen";
+import ProfileScreen from "./src/Screens/ProfileScreen";
+import CreatePostsScreen from "./src/Screens/CreatePostsScreen";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -30,6 +32,8 @@ export default function App() {
         />
         <Stack.Screen name="LoginScreen" component={LoginScreen} />
         <Stack.Screen name="Home" component={Home} />
+        <Stack.Screen name="CreatePostsScreen" component={CreatePostsScreen} />
+        <Stack.Screen name="ProfileScreen" component={ProfileScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );
